@@ -4,10 +4,6 @@
 
 int main(){
 
-
-
-
-
 int a = 0x00A0F040;
 int b = 0;
 int maska = 0x0000000F;
@@ -51,6 +47,62 @@ for(int i = 0; i<32; i++){
 }
 printf(" = %.8X", b);
 
+	
+//без использования массиввов
+/*
+
+
+int a = 0x00000040;
+int b = 0;
+int maska = 0x00000001;
+int i;
+int j = 31;
+int c, c1;
+
+for(i = 31; i > 0; i--){
+
+    if(i>15){
+        b|=(a&maska)<<j;
+        j-=2;
+    }else{
+        b|=(a&maska)>>j;
+        j+=2;
+    }
+
+    maska<<=1;
+
+}
+
+//вывод a в двоичной системе
+c = 0;
+c1 = b;
+printf("a = ");
+for(i = 0; i<32; i++){
+
+    c = c1%2;
+    printf("%d ", c);
+    c1 = c1/2;
+
+}
+
+printf("\n");
+
+//вывод в b двоичной системе
+c = 0;
+c1 = a;
+printf("b = ");
+
+for(i = 0; i<32; i++){
+
+	c = c1%2;
+	printf("%d ", c);
+	c1 = c1/2;
+}
+
+
+printf("\n\na = %.8X\nb = %.8X\n", a, b);
+*/
+	
 return 0;
 
 }
