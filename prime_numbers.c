@@ -1,17 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int c = 72;
     int i, t;
     t = 1;
-    int b,e;
+    int b,e; // for optim.
 
     b = 0;
     e = 0;
 
-    if(c%2 !=0){
+    if(c%2 !=0){ //ever / odd
 
         b = 3;
         e = 2;
