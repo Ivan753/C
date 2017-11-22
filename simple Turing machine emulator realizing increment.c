@@ -3,7 +3,6 @@
 
 int main(){
 
-char s[20];
 int state = 0;
 char a[30];
 int i,j;
