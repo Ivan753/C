@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 void push(int *x, int a, short *n){
 
