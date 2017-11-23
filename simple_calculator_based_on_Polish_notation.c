@@ -1,3 +1,9 @@
+/**
+* Простой калькулятор, работающий с выражениями, построенными по правилам обратной польской записи
+* 
+* Данные хранятся в стеке (см.реализайию https://github.com/Ivan753/C/blob/master/stack.c)
+*/
+
 #include <stdio.h>
 
 void push(int *x, int a, short *n){
@@ -148,7 +154,6 @@ if(t == 1){
 	break;
 }
 
-// push(stack, sum, count);
 
 		//print stack---
 		printf("stack: ");
