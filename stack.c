@@ -1,3 +1,7 @@
+/**
+* Реализайия стека на основе одномерного массива
+*/
+
 #include <stdio.h>
 
 void push(int *x, int a, short *n){
