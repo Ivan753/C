@@ -5,16 +5,29 @@
 
 #include <stdio.h>
 
-int main(){
+int main(int argc, char **argv){
 
-char s;
-int number;
+char s[30];
+char c;
+int number = 0;
 double res[2];
+int i = 0;
 
+while((s[i] = argv[1][i])!='\0'){
 
-scanf("%d%c",&number,&s);
+	if(s[i] >= '0' && s[i] <= '9'){
+		number = number*10 + s[i] - '0';
+	}else{
+		c = s[i];
+	}
+	i++;
+}
 
-switch(s){
+if(argc == 3){
+	c = argv[2][0];
+}
+
+switch(c){
 
 case 'C':  
 	if (number>=-273){
